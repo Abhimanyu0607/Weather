@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weatherStyle.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="mdiv">
+        <div class="weather_app">
+            <h2>WEATHER FORECAST</h2>
+            <div class="ip">
+                <input type="text" id="userText">
+                <button onclick="getWeatherData();"> <img
+                        src="https://www.freepnglogos.com/uploads/search-png/search-icon-line-icon-icon-24.png"
+                        alt="search" class="search"></button>
+            </div>
+            <div class="info" align="center">
+                <img src="./sunny.png" alt="weather" class="weather_img">
+                <h1 id="temp"> 27°C</h1>
+                <h2 id="city">PUNE</h2>
+            </div>
+            <div class="info2">
+                <div class="humidity">
+                    <img src="https://cdn-icons-png.flaticon.com/512/219/219816.png" alt="humidity" class="humi">
+                    <h3>HUMIDITY</h3>
+                    <h4 id="humidity-info">50%</h4>
+                </div>
+                <div class="wind">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1185/1185449.png" alt="wind" class="humi">
+                    <h3>WIND</h3>
+                    <h4 id="wind-info">4km/h</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="weatherScript.js"></script>
+</body>
+
+</html>
